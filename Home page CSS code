@@ -32,7 +32,7 @@
 }
 .navbar ul li a{
 	font-size: 20px;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Times New Roman';
 	color: white;
 	padding: 6px 13px;
 	text-decoration: none;
