@@ -75,7 +75,7 @@
 	font-size: 18px;
 	font-weight: 600;
 	color: #ffb3b3;
-	background: red;
+	background: blue;
 	outline: none;
 	cursor: pointer;
 	border: 1px solid #cc0000;
