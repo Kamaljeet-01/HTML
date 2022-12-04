@@ -43,7 +43,7 @@ body{
 }
 .navbar ul li a.active,
 .navbar ul li a:hover{
-	background: red;
+	background: orange;
 	border-radius: 2px;
 }
 .heading{
