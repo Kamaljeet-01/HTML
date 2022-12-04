@@ -52,7 +52,7 @@
 	user-select: none;
 }
 .center h1{
-	color: grey;
+	color: black;
 	font-size: 70px;
 	width: 900px;
 	font-weight: bold;
