@@ -24,7 +24,7 @@
 			<h2>Create Something New</h2>
 			<div class="buttons">
 			<button onclick="ab()" >Explore more</button>
-			<button class="btn2" onclick="abc()">Subscribe Us</button>
+			<button class="btn2" onclick="abc()">Subscribe</button>
 		</div>
 		</div>
 </body>
