@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Website</title>
+	<link rel="stylesheet" href="services_css.css">
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="navbar">
+			<img class="logo" src="logo.png">
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">about</a></li> 
+			</ul>
+		</nav>
+	</div>
+    <p class="heading">Our Services</p><hr><hr>
+    <div class="menu1">
+        <ul><center>
+            <li><a href="#">Bedroom</a></li>
+			<li><a href="#">Hall</a></li>
+			<li><a href="#">Study Room</a></li></center>
+        </ul>
+    </div><br><br>
+    <center class="beds"><h1>BEDROOM</h1></center><br>
+    <div class="pics">
+        <table style="width: 100%;">
+            <tr>
+                <td><img src="b7.png" ><br>Design 1</td>
+                <td><img src="B2.jpg" ><br>Design 2</td>
+                <td><img src="B3.jpg"><br>Design 3</td>
+            </tr>
+            <tr>
+                <td><img src="b5.png"><br>Design 4</td>
+                <td><img src="b2.png"><br>Design 5</td>
+                <td><img src="b3.png"><br>Design 6</td>
+            </tr>
+            <tr>
+                <td><img src="b4.png"><br>Design 7</td>
+                <td><img src="b5.png"><br>Design 8</td>
+                <td><img src="b8.png"height="270px"><br>Design 9</td>
+            </tr>
+        </table>
+    </div><br><br>
+    <center class="Kitchen"><h1>HALL</h1></center><br>
+    <div class="pics">
+        <table style="width: 100%;">
+            <tr>
+                <td><img src="d1.png" height="350px"><br>Design 1</td>
+                <td><img src="d2.png"><br>Design 2</td>
+                <td><img src="d3.png"><br>Design 3</td>
+            </tr>
+            <tr>
+                <td><img src="d4.png"><br>Design 4</td>
+                <td><img src="d5.png"><br>Design 5</td>
+                <td><img src="d6.png"><br>Design 6</td>
+            </tr>
+            <tr>
+                <td><img src="d7.png"><br>Design 7</td>
+                <td><img src="d8.png"><br>Design 8</td>
+                <td><img src="d9.png"><br>Design 9</td>
+            </tr>
+        </table>
+    </div><br><br>
+    <center class="Study"><h1>STUDY ROOM</h1></center><br>
+    <div class="pics">
+        <table style="width: 100%;">
+            <tr>
+                <td><img src="s1.png" width="450px"><br>Design 1</td>
+                <td><img src="s2.png"><br>Design 2</td>
+                <td><img src="s3.png"><br>Design 3</td>
+            </tr>
+            <tr>
+                <td><img src="s4.png" height="350px" width="450px"><br>Design 4</td>
+                <td><img src="s5.png"><br>Design 5</td>
+                <td><img src="s6.png"><br>Design 6</td>
+            </tr>
+            <tr>
+                <td><img src="s7.png"><br>Design 7</td>
+                <td><img src="s8.png"><br>Design 8</td>
+                <td><img src="s9.png"><br>Design 9</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
