@@ -6,7 +6,7 @@
 	<title>Custom Website</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
-	<title>Home Page</title>
+	<title>INDEX</title>
 </head>
 <body>
 	<div class="wrapper">
