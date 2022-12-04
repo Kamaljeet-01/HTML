@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    background: url(b1.png);
+}
+.wrapper{
+	background-size: cover;
+	height: 80px;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+.navbar .logo {
+    width: 200px;
+    height: auto;
+    padding: 10px 10px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.heading{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 72px;
+    text-align: center;
+    padding: 50px 0 10px 0;
+}
+.menu1 ul{
+    background: rgba(0, 0, 0, 0.69);
+}
+.menu1 ul li{
+    justify-content: center;
+	list-style: none;
+	margin: 0 100px;
+	display: inline-block;
+	line-height: 80px;
+}
+.menu1 ul li a{
+    background: rgb(255, 0, 0);
+    border-radius: 15px;
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255);
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+    text-transform: uppercase;
+}
+.pics table{
+    text-align: center;
+}
+table{
+    padding: 10px 10px 10px 10px;
+}
+img{
+    padding: 10px;
+    width: 400px;
+    border-radius: 15px;
+}
+table tr{
+    background: rgb(0,0,0,0.4);
+}
+table td{
+    
+    color: rgb(253, 5, 5);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    border: 2px solid black;
+    justify-content: center;
+    padding: 1px;
+    border-radius: 30px;
+}
+.beds{
+    font-size: 40px;
+    text-decoration: none;
+    color: aliceblue;
+    background: red;
+    border-radius: 15px;
+    font-family: Roboto;
+}
+.Kitchen{
+    font-size: 40px;
+    text-decoration: none;
+    color: aliceblue;
+    background: red;
+    border-radius: 15px;
+    font-family: Roboto;
+}
+.Study{
+    font-size: 40px;
+    text-decoration: none;
+    color: aliceblue;
+    background: red;
+    border-radius: 15px;
+    font-family: Roboto;
+}
+.form{
+    margin: 150px;
+    padding: 100px;
+    align-items: right;
+}
+.frm{
+    align-content: space-around;
+}
+.task{
+    border-collapse:collapse;
+    border: 3px  black;
+}
+.info{
+    font-weight: 100;
+    font-size: larger;
+}
