@@ -1,0 +1,31 @@
+# HOME PAGE CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Website</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<title>Home Page</title>
+</head>
+<body>
+	<div class="wrapper">
+			<nav class="navbar">
+				<img class="logo" src="logo.png">
+				<ul>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="about.html">About</a></li> 
+				</ul>
+			</nav>
+		<div class="center">
+			<h1>Welcome To DecorWorks</h1>
+			<h2>Create Something New</h2>
+			<div class="buttons">
+			<button onclick="ab()" >Explore more</button>
+			<button class="btn2" onclick="abc()">Subscribe Us</button>
+		</div>
+		</div>
+</body>
+</html>
