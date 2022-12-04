@@ -59,7 +59,7 @@
 	text-align: center;
 }
 .center h2{
-	color: blueviolet;
+	color: violet;
 	font-size: 70px;
 	font-weight: bold;
 	margin-top: 10px;
