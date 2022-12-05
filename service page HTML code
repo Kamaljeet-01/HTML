@@ -49,9 +49,9 @@
     <div class="pics">
         <table style="width: 100%;">
             <tr>
-                <td><img src="d1.png" height="350px"><br>Design 1</td>
-                <td><img src="d2.png"><br>Design 2</td>
-                <td><img src="d3.png"><br>Design 3</td>
+                <td><img src="d1.png" height="350px"><br>Design 1.</td>
+                <td><img src="d2.png"><br>Design 2.</td>
+                <td><img src="d3.png"><br>Design 3.</td>
             </tr>
             <tr>
                 <td><img src="d4.png"><br>Design 4</td>
