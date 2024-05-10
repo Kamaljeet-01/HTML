@@ -1,0 +1,95 @@
+ip r
+ip a
+sudo nano /etc/netplan/01-network-manager-all.yaml
+sudo netplan apply
+sudo systemctl restart NetworkManager
+hostname --fqdn
+sudo nano /etc/hosts
+sudo hostnamectl set-hostname ubuntu
+sudo apt install bridge-utils
+sudo brctl addbr bro
+sudo brctl addif bro ens33
+sudo nano /etc/netplan/01-network-manager-all.yaml
+network:
+ version: 2
+ renderer: networkd
+ ethernets:
+  ens33:
+   dhcp4: no
+   dhcp6: no
+ bridges:
+  bro:
+   interfaces: [ens33]
+   dhcp4: no
+   dhcp6: no
+   addresses: [192.168.145.135/24]
+   gateway4: 192.168.145.2
+   nameservers:
+    addresses: [8.8.8.8,8.8.4.4]
+
+
+sudo netplan apply
+sudo systemctl restart NetworkManager
+sudo apt install ntp
+sudo apt install chrony
+sudo apt install openjdk-11-jdk
+sudo nano /etc/apt/sources.list.d/cloudstack.list
+>>adding this line to file :
+deb https://download.cloudstack.org/ubuntu focal 4.18
+>>exit the file after saving
+wget -O - https://download.cloudstack.org/release.asc |sudo tee /etc/apt/trusted.gpg.d/cloudstack.asc
+sudo apt update
+
+
+sudo apt install cloudstack-management
+sudo apt install mysql-server
+sudo nano /etc/mysql/my.cnf
+[mysqld]
+server-id=1
+innodb_rollback_on_timeout=1
+innodb_lock_wait_timeout=600
+max_connections=350
+log-bin=mysql-bin
+binlog-format = 'ROW'
+sudo systemctl restart mysql
+
+sudo mysql_secure_installation
+yes>0>yes>yes>yes>yes
+sudo mysql
+CREATE DATABASE `CA1`;
+CREATE USER cloud@`localhost` identified by 'Password';
+GRANT ALL ON cloud.* to cloud@`localhost`;
+GRANT process ON *.* TO cloud@`localhost`;
+exit;
+
+//deploy database :
+sudo cloudstack-setup-databases cloud:<root-password>@localhost --deploy-as=root
+
+sudo cloudstack-setup-management
+sudo ufw allow mysql		//allow port for mysql
+mkdir -p /export/primary
+mkdir -p /export/secondary
+sudo nano /etc/exports
+>>add this line in file :  /export *(rw,async,no_root_squash,no_subtree_check)
+
+//install NFS server
+sudo apt install nfs-kernel-server
+
+service nfs-kernel-server restart
+sudo mkdir -p /mnt/primary
+sudo mkdir -p /mnt/secondary
+sudo mount -p /mnt/primary
+sudo mount -p /mnt/secondary
+
+
+http://192.168.19.128:8080/client/
+
+
+
+Zone1>8.8.8.8 >8.8.8.8>kvm >next
+Public Network 1>vlan>next
+Pod1>gateway(192.168.145.2) >255.255.255.0>192.168.145.151>192.168.145.155>next
+gateway(192.168.145.2)>255.255.255.0>192.168.145.156>192.168.145.160>next
+cluster1>192.168.145.135>admin>password>next
+Primary1>zone>nfs>192.168.145.135>/export/primary>defaulyPrimary>next
+NFS>secondary1>192.168.145.135>/export/secondary>next>launch
